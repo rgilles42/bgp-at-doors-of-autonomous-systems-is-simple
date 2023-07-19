@@ -7,7 +7,6 @@ else
 	ip link add name vxlan10 type vxlan id 10 dev eth0 \
 		local 10.1.1.$router_id remote 10.1.1.$((3-$router_id)) dstport 4789
 fi
-ip addr add 10.3.1.$router_id/24 dev vxlan10
 brctl addbr br0
 brctl addif br0 eth1
 brctl addif br0 vxlan10
