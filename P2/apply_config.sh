@@ -1,6 +1,6 @@
 #!/bin/bash
 if [[ $1 == '' ]]; then
-	echo "Please add either static or multi as argument."
+	echo "Please add either 'static' or 'multi' as argument."
 	exit 0
 fi
 
