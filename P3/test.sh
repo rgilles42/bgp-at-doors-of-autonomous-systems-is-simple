@@ -1,3 +1,4 @@
+#!/bin/bash
 ids=$(docker ps --format '{{.ID}}')
 
 declare -A hostmap

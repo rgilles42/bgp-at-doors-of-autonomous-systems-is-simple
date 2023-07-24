@@ -1,3 +1,4 @@
 #!/bin/bash
-docker build -t host_rgilles - < ./P1/host_rgilles_Dockerfile
-docker build -t router_rgilles - < ./P1/router_rgilles_Dockerfile
+cd $(dirname $0)
+docker build -t host_rgilles - < ./host_rgilles_Dockerfile
+docker build -t router_rgilles - < ./router_rgilles_Dockerfile
